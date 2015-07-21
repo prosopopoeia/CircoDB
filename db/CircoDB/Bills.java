@@ -75,12 +75,7 @@ public class Bills {
     public double getMaterialsTotal(){
         return materialsTotal;
     }
-    public void setTripFee(boolean value){
-        tripFee = value;
-    }
-    public boolean getTripFee(){
-        return tripFee;
-    }
+    
     public void setMisc(double value){
         misc = value;
     }

@@ -18,7 +18,7 @@ package db.CircoDB;
  */
 public class Customers {
     private String firstName, lastName, addy, city, state, zip, phone, mostRecent, secondPhone, mailAddy; 
-    private String mailCity, mailState, mailZip, custID;
+    private String mailCity, mailState, mailZip, custID, invoices;
     public Customers(){
     
     }
@@ -48,6 +48,9 @@ public class Customers {
         this.mailAddy = mailAddy;
         this.mailCity = mailCity;
         this.mailState = mailState;
+    }
+    public void setInvoices(String inv){
+        invoices = inv;
     }
     public void setFirstName(String name){
         firstName = name;
@@ -97,6 +100,10 @@ public class Customers {
     }  
     public String getCustID(){
         return custID;
+    }
+    
+    public String getInvoices(){
+        return invoices;
     }
     public String getLastName(){
         return lastName;
